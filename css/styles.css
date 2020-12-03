@@ -36,8 +36,17 @@ a:visited {
     border-bottom: 1px solid black;
 }​
 
-.hyperlink {
+.tiny {
+  font-size: 12px;
+}
 
+.tiny-small-margin {
+  font-size: 12px;
+  margin: 5px;
+}
+
+.no-margins {
+  margin: 0;
 }
 
 .forum-format > p {
@@ -52,6 +61,10 @@ a:visited {
 
 .left-align {
   text-align: left;
+}
+
+.center-align {
+  text-align: center;
 }
 
 .favicon {
@@ -187,10 +200,6 @@ a:visited {
   color: white;
 }
 
-.topnav a.inactive {
-
-}
-
 .topnav .search-container {
   float: right;
 }
@@ -223,6 +232,13 @@ a:visited {
   background-color: #222831;
 }
 
+.articles-fade {
+  margin: 0;
+  padding: 5px;
+  background-color: #222831;
+  display: none;
+}
+
 .article-post > h2, p {
   margin: 4px;
   font-size: 90%;
@@ -232,6 +248,27 @@ a:visited {
     background: #145374;
     border-left: solid;
     border-color: #facf5a;
+}
+
+.article-post-hidden {
+  background: #145374;
+  border-left: solid;
+  border-color: #facf5a;
+  display: hidden;
+}
+
+.article-button {
+  padding: 10px;
+  background: #145374;
+  border-left: solid;
+  border-color: #f95959;
+  margin: 10px;
+  width: 90px;
+}
+
+.article-button > h2, p {
+  margin: 4px;
+  font-size: 90%;
 }
 
 .articles > h1, .article-post {
@@ -244,14 +281,14 @@ a:visited {
 .leftcolumn {
   float: left;
   width: 45%;
-  padding-left: 20%;
+  padding-left: 10%;
   margin-bottom: 50px;
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 2%0%;
+  width: 15%;
   padding-left: 150px;
 }
 
@@ -276,6 +313,7 @@ a:visited {
   border-left: solid;
   border-color: #facf5a;
 }
+
 /* Add a card effect for articles */
 .card-profile {
   background-color: #145374;
@@ -304,6 +342,11 @@ a:visited {
 .row-home {
   text-align: center;
 }
+
+.row-fade {
+display: none;
+}
+
 .row:after {
   content: "";
   display: table;
@@ -321,10 +364,6 @@ a:visited {
   font-weight: 400;
   line-height:1.55;
   font-size: 1.1rem;
-}
-
-.paragraph-separater {
-
 }
 
 .about-header {
@@ -348,15 +387,14 @@ a:visited {
 .comment-container {
   padding-top:25px;
   text-align: left;
-  width: auto;
-  padding-left: 25px;
+  width: 45%;
+  margin-top: 25px;
   margin-bottom: 25px;
   background-color: #145374;
   border-left: solid;
   border-color: #facf5a;
-  margin: 5%;
   max-width: 1000px;
-  padding-right: 25px;
+  padding-left: 10%;
   margin-left: 20%;
 }
 
@@ -368,7 +406,6 @@ a:visited {
   text-align: left;
   padding-bottom:25px;
   width: auto;
-  max-width:
   background-color: #145374;
   border-left: solid, #facf5a;
   max-width: 800px;
@@ -382,4 +419,11 @@ a:visited {
 
 label {
   margin-bottom:0;
+}
+
+label.error {
+  color: red;
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
 }
