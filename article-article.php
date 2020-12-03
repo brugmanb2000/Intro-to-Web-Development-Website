@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<?php $thisPage="Review"; 
+<?php $thisPage="Articles"; 
 require_once 'php/Dao.php';
 $articleID = $_GET['id'];
 $dao = new Dao();

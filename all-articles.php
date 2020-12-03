@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<?php $thisPage="Editorials"; 
+<?php $thisPage="Articles"; 
 require_once 'php/Dao.php'; ?>
 <html>
 
@@ -17,15 +17,15 @@ require_once 'php/Dao.php'; ?>
 
 $dao = new Dao();
 $conn = $dao->getConnection();
-$stmt = $conn->query("SELECT * from article where metatag like 'editorial' order by ID desc limit 15;'");
+$stmt = $conn->query("SELECT * from article order by ID desc limit 15;'");
 ?>
 
 <article class="articles-fade" id="articleList">
-  <h1>Editorials</h1>
+  <h1>All Articles</h1>
 
   <?php while($row = $stmt->fetch()) { ?>
    <article class="article-post" id="article">
-    <h4> <a <?php echo "href=article-editorial.php?id=" . $row['id'];?>> <?php echo $row['title'] ?></a> </h4>
+    <h4> <a <?php echo "href=article-article.php?id=" . $row['id'];?>> <?php echo $row['title'] ?></a> </h4>
     <p>  <?php echo $row['subtitle']; ?> </p>
 
     </article>
