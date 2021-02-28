@@ -1,7 +1,5 @@
 # Intro to Web Development Website
 
-Website made Intro to Web Development
-
 ## By Brandon Brugman
 
 Link: https://night-of-the-living-review1.herokuapp.com/home.php
