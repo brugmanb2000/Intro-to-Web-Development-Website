@@ -1,4 +1,4 @@
-# cs401website
+# Intro to Web Development Website
 
 Website made Intro to Web Development
 
