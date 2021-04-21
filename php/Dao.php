@@ -4,8 +4,8 @@ class Dao {
 
   private $db_host = 'db4free.net';
   private $db_user = 'brandonadmin';
-  private $db_pass = '3XaMpl3s!@#';
-  private $db_name = 'cs410database';
+  private $db_pass = ''; // Hidden as database is no longer live
+  private $db_name = ''; // No longer live
 
   public function getConnection() {
     try {
